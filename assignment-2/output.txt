@@ -1,0 +1,7 @@
+OneHot(
+    shape=torch.Size([4096]),
+    space=CategoricalBox(n=4096),
+    device=cpu,
+    dtype=torch.int64,
+    domain=discrete)
+Action received: [0 0 0 0 0 0 0 0]

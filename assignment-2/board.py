@@ -22,12 +22,23 @@ class Board:
         ], dtype=np.int8)
         self.current_player = 1 # 1 for white, -1 for black
         self.move_count = 0
+        self.int_to_piece = {
+            0: "empty",
+            1: "white_pawn", -1: "black_pawn",
+            2: "white_knight", -2: "black_knight",
+            3: "white_bishop", -3: "black_bishop",
+            4: "white_rook", -4: "black_rook",
+            5: "white_queen", -5: "black_queen",
+            6: "white_king", -6: "black_king"
+        }
+        
         # TODO: Add state for castling rights, en passant target square, halfmove clock, fullmove number for FEN/PGN compatibility if needed
 
     def get_state(self):
         """Returns the current board state as a NumPy array or PyTorch tensor."""
         # TorchRL often works best with tensors
-        return torch.tensor(self.board, dtype=torch.float32) # Use float for NN input
+        tensor = torch.tensor(self.board, dtype=torch.float32) # Use float for NN input
+        return tensor
 
     
     def make_move(self, from_pos, to_pos):

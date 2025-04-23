@@ -20,7 +20,8 @@ class ChessEnv(Env):
         """Logs the action taken."""
         from_row, from_col, to_row, to_col = self._action_to_pos(action)
         piece = self.board.board[from_row, from_col]
-        print(f"Action taken: Move {piece} from ({from_row}, {from_col}) to ({to_row}, {to_col})")
+        piece_name = self.board.int_to_piece[piece]
+        print(f"Action taken: Move {piece_name} from ({from_row}, {from_col}) to ({to_row}, {to_col})")
         
     def _get_obs(self):
         """Returns the current board state."""
@@ -35,6 +36,7 @@ class ChessEnv(Env):
     
     def step(self, action):
         """Executes the action and returns the new state, reward, done, and info."""
+        print(f"Action received: {action}")
         from_row, from_col, to_row, to_col = self._action_to_pos(action)
         valid_move = self.board.make_move((from_row, from_col), (to_row, to_col))
         
