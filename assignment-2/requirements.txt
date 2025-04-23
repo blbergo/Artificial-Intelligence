@@ -1,0 +1,8 @@
+tensordict
+torchrl
+opencv-python
+numpy
+pandas
+matplotlib
+gym<1.0
+torchviz
