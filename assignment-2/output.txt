@@ -1,1 +1,207 @@
-Action received: [ 616  616    0    0    0    0 1069 1774]
+TensorDictModule(
+    module=MLP(
+      (0): Linear(in_features=8, out_features=4096, bias=True)
+    ),
+    device=cpu,
+    in_keys=['observation'],
+    out_keys=['logits'])
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
+Action received: 0
+Action taken: Move black_rook from (0, 0) to (0, 0)
