@@ -33,5 +33,11 @@ actor = ProbabilisticActor(
     in_keys=["logits"],
 )
 
+critic_mlp = MLP(
+    in_features=n_obs,
+    out_features=1,
+)
+print(critic_mlp)
+
 
 rollout = env.rollout(max_steps=100, policy=actor)
