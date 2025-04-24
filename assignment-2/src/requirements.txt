@@ -1,7 +1,0 @@
-tensordict
-torchrl
-torch
-opencv-python
-numpy
-pandas
-gymnasium<=0.29.1

@@ -15,18 +15,19 @@ class ChessEnv(gym.Env):
         self.action_space = gym.spaces.Discrete(64 * 64)
         self._action_to_pos = lambda x: ((x // 64) // 8, (x // 64) % 8, (x % 64) // 8, (x % 64) % 8)
         self.epoch = 0
+        self.step_count = 0
         with open('actions.csv', 'w', newline='') as file:
             self.writer = csv.writer(file)
-            self.writer.writerow(["Piece", "From Row", "From Col", "To Row", "To Col", "Epoch"])
+            self.writer.writerow(["step", "piece", "from", "to", "reward", "epoch"])
         
-    def _log_action(self, action):
+    def _log_action(self, action, reward):
         """Logs the action taken to a CSV file."""
         from_row, from_col, to_row, to_col = self._action_to_pos(action)
         piece = self.board.board[from_row, from_col]
         piece_name = self.board.int_to_piece[piece]
         with open('actions.csv', mode='a', newline='') as file:
             writer = csv.writer(file)
-            writer.writerow([self.board.move_count, piece_name, from_row, from_col, to_row, to_col, self.epoch])
+            writer.writerow([self.step_count, self.board.move_count, piece_name, (from_row, from_col), (to_row, to_col), reward, self.epoch])
         
     def _get_obs(self):
         """Returns the current board state."""
@@ -40,17 +41,18 @@ class ChessEnv(gym.Env):
     
     def step(self, action):
         """Executes the action and returns the new state, reward, done, and info."""
-        print(f"Action taken: {action}")
         from_row, from_col, to_row, to_col = self._action_to_pos(action)
         valid_move = self.board.make_move((from_row, from_col), (to_row, to_col))
         
         if valid_move:
             reward = 1
         else:
-            reward = 0
+            reward = -10
+            
         terminated = self.board.is_game_over()
         truncated = False
-        self._log_action(action)
+        self._log_action(action, reward)
+        self.step_count += 1
         return self._get_obs(), reward, terminated, truncated, {}
         
     def reset(self, seed=None, options=None):
@@ -58,5 +60,6 @@ class ChessEnv(gym.Env):
         super().reset(seed=seed)
         self.board.reset()
         self.epoch += 1
+        self.step_count = 0
         return self._get_obs(), {}
         

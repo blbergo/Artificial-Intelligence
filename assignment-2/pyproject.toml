@@ -3,17 +3,20 @@ name = "assignment"
 version = "0.1.0"
 description = ""
 authors = [
-    {name = "blbergo",email = "bryan.l.bergo@gmail.com"}
+    {name = "blbergo"}
 ]
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "torchrl",
     "torch",
-    "gymnasium<1.0.0",
+    "gymnasium<=1.0.0",
     "numpy",
     "pandas",
-    "tensordict"
+    "tensordict",
+    "ipykernel",
+    "plotly",
+    "nbformat>=4.2.0 ",
 ]
 
 [tool.poetry]
