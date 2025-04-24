@@ -1,0 +1,25 @@
+[project]
+name = "assignment"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "blbergo",email = "bryan.l.bergo@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "torchrl",
+    "torch",
+    "gymnasium<1.0.0",
+    "numpy",
+    "pandas",
+    "tensordict"
+]
+
+[tool.poetry]
+package-mode = false
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

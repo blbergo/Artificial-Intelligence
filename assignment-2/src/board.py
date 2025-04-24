@@ -35,12 +35,12 @@ class Board:
         # TODO: Add state for castling rights, en passant target square, halfmove clock, fullmove number for FEN/PGN compatibility if needed
 
     def get_state(self):
-        """Returns the current board state as a NumPy array or PyTorch tensor."""
-        # TorchRL often works best with tensors
-        tensor = torch.tensor(self.board, dtype=torch.float32) # Use float for NN input
-        return tensor
+        """
+        Returns the current state of the board as a numpy array.
+        The state is represented as an 8x8 array with values from -6 to 6.
+        """
+        return self.board.copy()
 
-    
     def make_move(self, from_pos, to_pos):
         """
         Applies a move to the board if it's valid.
@@ -68,8 +68,6 @@ class Board:
         self.board[to_row, to_col] = self.board[from_row, from_col]
         self.board[from_row, from_col] = 0
 
-        # Switch player
-        self.current_player *= -1
         self.move_count += 1
 
         # TODO: Handle captures, promotions, castling, en passant updates
@@ -79,12 +77,11 @@ class Board:
         """
         Checks if the game has ended (checkmate, stalemate, draw conditions).
         Returns:
-            A tuple (is_over, winner), where winner is 1 for white, -1 for black, 0 for draw.
         """
         # Simple check: has a king been captured? (Shouldn't happen with valid moves)
         kings = [np.any(self.board == 6), np.any(self.board == -6)]
-        if not kings[0]: return True, -1 # White king missing, black wins
-        if not kings[1]: return True, 1  # Black king missing, white wins
+        if not kings[0]: return False # White king missing, black wins
+        if not kings[1]: return True  # Black king missing, white wins
 
         # Simple check: Max moves (to prevent infinite games in testing)
         if self.move_count >= 200: # Arbitrary limit

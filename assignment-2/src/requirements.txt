@@ -1,8 +1,7 @@
 tensordict
 torchrl
+torch
 opencv-python
 numpy
 pandas
-matplotlib
-gym<1.0
-torchviz
+gymnasium<=0.29.1
