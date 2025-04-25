@@ -1,5 +1,0 @@
-gym
-torchrl
-gym-chess
-pandas
-ipykernel

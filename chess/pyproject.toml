@@ -1,5 +1,5 @@
 [project]
-name = "chess"
+name = "assignment-2"
 version = "0.1.0"
 description = ""
 authors = [
@@ -8,9 +8,10 @@ authors = [
 readme = "README.md"
 requires-python = ">=3.12,<4.0"
 dependencies = [
-    "gym-chess",
-    "setuptools (>=79.0.1,<80.0.0)",
+    "python-chess (>=1.999,<2.0)",
     "torchrl (>=0.7.2,<0.8.0)",
+    "gymnasium (<1.0.0)",
+    "ipykernel (>=6.29.5,<7.0.0)",
 ]
 
 [tool.poetry]
