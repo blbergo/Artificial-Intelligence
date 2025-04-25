@@ -45,9 +45,9 @@ class ChessEnv(gym.Env):
         valid_move = self.board.make_move((from_row, from_col), (to_row, to_col))
         
         if valid_move:
-            reward = 1
+            reward = 0.5
         else:
-            reward = -10
+            reward = -1
             
         terminated = self.board.is_game_over()
         truncated = False
